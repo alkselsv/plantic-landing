@@ -78,7 +78,7 @@
       </section>
     </main>
     <footer class="landing__footer landing__row_hidden">
-      <span class="">© 2022 <a href="https://plantic.tech" class="">PLANTIC TECHNOLOGY LLC</a>.</span>
+      <span class="">© 2023 <a href="https://plantic.tech" class="">PLANTIC TECHNOLOGY LLC</a>.</span>
     </footer>
   </section>
 </template>
