@@ -1,0 +1,87 @@
+//@import "./assets/styles/font";
+@import 'element-plus/dist/index.css';
+
+* {
+  font-family: Manrope, Inter, sans-serif;
+  //user-select: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+  background: black;
+  color: white;
+}
+body {
+  touch-action: pan-x pan-y;
+}
+body:before {
+  position:fixed;
+  content: "";
+  background: linear-gradient(45deg, #00DC82 0%, #36E4DA 50%, #0047E1 100%);
+  filter: blur(30vh);
+  height: 40vh;
+  bottom: -40vh;
+  z-index: 3;
+  right: 0;
+  left: 0;
+}
+
+.gradient-border {
+  position: relative;
+  border-radius: 0.5rem;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  width: 100%;
+}
+
+
+.gradient-border {
+  background: transparent;
+  //background-color: rgba(20, 20, 20, 0.3)
+}
+
+.gradient-border::before {
+  background: linear-gradient(90deg, #303030 0%, #303030 25%, #00DC82 50%, #36E4DA 75%, #0047E1 100%)
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0.5rem;
+  padding: 2px;
+  width: 100%;
+  background-size: 400% auto;
+  background-position: 0 0;
+  opacity: 0.5;
+  transition: background-position 0.3s ease-in-out, opacity 0.2s ease-in-out;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,
+  linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box,
+  linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.gradient-border:hover::before {
+  background-position: -50% 0;
+  opacity: 1
+}
+
+.hide {
+  display: none;
+}
+
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
