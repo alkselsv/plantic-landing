@@ -70,6 +70,7 @@
           <div>
             <h3 class="main-page__text">{{ t('description_5') }}</h3>
             <a class="main-page__text" href="mailto:in@plantic.tech">in@plantic.tech</a>
+            <p class="main-page__text">+7 (920) 499-88-00</p>
           </div>
         </article>
         <article class="landing__section">
